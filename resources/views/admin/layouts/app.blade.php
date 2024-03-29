@@ -43,7 +43,7 @@
                             <div class="dropdown user-profile ml-2 ml-sm-3 d-flex align-items-center">
                                 <div class="u-info me-2">
                                     <p class="mb-0 text-end line-height-sm "><span class="font-weight-bold">
-                                            {{auth()->user()->name}}</span></p>
+                                            {{ auth()->user()->name }}</span></p>
                                     <small>Admin Profile</small>
                                 </div>
                                 <a class="nav-link dropdown-toggle pulse p-0" href="#" role="button"
@@ -59,9 +59,10 @@
                                                 <img class="avatar rounded-circle"
                                                     src="{{ asset('assets/images/profile_av.png') }}" alt="profile">
                                                 <div class="flex-fill ms-3">
-                                                    <p class="mb-0"><span class="font-weight-bold">{{auth()->user()->name}}</span>
+                                                    <p class="mb-0"><span
+                                                            class="font-weight-bold">{{ auth()->user()->name }}</span>
                                                     </p>
-                                                    <small class="">{{auth()->user()->email}}</small>
+                                                    <small class="">{{ auth()->user()->email }}</small>
                                                 </div>
                                             </div>
 
@@ -76,7 +77,7 @@
                                             <a href="members.html"
                                                 class="list-group-item list-group-item-action border-0 "><i
                                                     class="icofont-ui-user-group fs-6 me-3"></i>members</a>
-                                            <a href="{{route('admin.logout')}}"
+                                            <a href="{{ route('admin.logout') }}"
                                                 class="list-group-item list-group-item-action border-0 "><i
                                                     class="icofont-logout fs-6 me-3"></i>Signout</a>
                                             <div>
@@ -122,7 +123,6 @@
     <!-- Jquery Page Js -->
     <script src=".{{ asset('assets/js/template.js') }}"></script>
     <script src="{{ asset('assets/js/hr.js') }}"></script>
-
     <script type="text/javascript">
         $.ajaxSetup({
             headers: {
